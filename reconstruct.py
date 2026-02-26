@@ -1,4 +1,5 @@
 import os
+import shutil
 from PIL import Image
 
 input_folder = "bit_folder"
@@ -33,3 +34,5 @@ print(f"Reconstruction complete. The rock has been recreated using magic and stu
 
 img = Image.open(output_file)
 img.show()
+
+shutil.rmtree(input_folder)
