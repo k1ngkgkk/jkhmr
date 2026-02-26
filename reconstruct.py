@@ -29,7 +29,7 @@ for i in range(0,len(all_bits), 8):
 with open(output_file, "wb") as f:
     f.write(byte_array)
 
-print(f"Reconstruction complete. The rock has been recreated using magic and stuff from the rubble idk.")
+print(f"Reconstruction complete. The rock has been recreated using magic and stuff from the rubble using glue or something idk.")
 
 img = Image.open(output_file)
 img.show()

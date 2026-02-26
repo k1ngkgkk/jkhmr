@@ -30,4 +30,4 @@ for byte in data:
         counter += 1
 
 
-print(f"Jackhammerin' complete. {counter} pieces of rubble saved in '{output_folder}'.")
+print(f"Jackhammerin' complete. {counter} pieces of rubble saved in '{output_folder}'. It is now ready for reconstruction using the magic of python and glue and stuff idk.")
