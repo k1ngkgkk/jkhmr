@@ -1,6 +1,11 @@
 import os
 
-inpput_file = input("Enter the path to the file you want to deconstruct: ")
+try:
+    input_file = input("Enter the path to the file you want to deconstruct: ")
+except:
+    input_file = "banana.png"
+    print(f"No validinput provided. Defaulting to '{input_file}'.")
+
 output_folder = "bit_folder"
 
 os.makedirs(output_folder, exist_ok=True)

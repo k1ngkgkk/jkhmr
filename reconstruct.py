@@ -1,4 +1,5 @@
 import os
+from PIL import Image
 
 input_folder = "bit_folder"
 output_file = "reconstructed.png"
@@ -29,3 +30,6 @@ with open(output_file, "wb") as f:
     f.write(byte_array)
 
 print(f"Reconstruction complete. The rock has been recreated using magic and stuff from the rubble idk.")
+
+img = Image.open(output_file)
+img.show()
