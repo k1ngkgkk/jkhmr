@@ -1,6 +1,7 @@
 import os
 import shutil
 from PIL import Image
+from tqdm import tqdm
 
 input_folder = "bit_folder"
 output_file = "reconstructed.png"
@@ -12,13 +13,15 @@ files = sorted(
 
 all_bits = ""
 
-for filename in files:
-    with open(os.path.join(input_folder, filename), "rb") as f:
-        byte_value = f.read(1)[0]
-        if byte_value == 0:
-            all_bits +=  "0"
-        else:
-            all_bits += "1"
+with tqdm(total=len(files), desc="Gluing rubble w/ magic", unit="bit") as pbar:
+    for filename in files:
+        with open(os.path.join(input_folder, filename), "rb") as f:
+            byte_value = f.read(1)[0]
+            if byte_value == 0:
+                all_bits +=  "0"
+            else:
+                all_bits += "1"
+        pbar.update(1)
 
 byte_array = bytearray()
 
@@ -30,9 +33,9 @@ for i in range(0,len(all_bits), 8):
 with open(output_file, "wb") as f:
     f.write(byte_array)
 
-print(f"Reconstruction complete. The rock has been recreated using magic and stuff from the rubble using glue or something idk.")
+shutil.rmtree(input_folder)
 
 img = Image.open(output_file)
 img.show()
 
-shutil.rmtree(input_folder)
+print(f"Reconstruction complete. The rock has been recreated using magic and stuff from the rubble using glue or something idk.")
