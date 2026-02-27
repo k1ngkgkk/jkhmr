@@ -1,2 +1,2 @@
 @echo off
-python "%~dp0jackhammer.py" %*
+python "%~dp0jkhmr.py" %*
