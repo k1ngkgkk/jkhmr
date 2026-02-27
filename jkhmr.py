@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 import shutil
 from PIL import Image
@@ -5,7 +7,7 @@ from tqdm import tqdm
 import sys
 
 
-def deconsruct (input_file):
+def deconstruct (input_file):
 
     output_folder = "rubble"
     os.makedirs(output_folder, exist_ok=True)
