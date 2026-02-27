@@ -77,8 +77,8 @@ def reconstruct (output_file):
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         print("Usage:")
-        print("  jackhammer deconstruct <input_file>")
-        print("  jackhammer reconstruct <input_folder>")
+        print("  jackhammer deconstruct <input_file.png>")
+        print("  jackhammer reconstruct <output_file.png>")
         sys.exit(1)
 
     command = sys.argv[1]
