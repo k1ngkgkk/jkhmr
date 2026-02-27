@@ -22,7 +22,7 @@ with tqdm(total=total_bits, desc="Jackhammerin'", unit="bit") as pbar:
         binary_string = format(byte,"08b")
 
         for bit in binary_string:
-            filename = os.path.join(output_folder, f"bit_{counter}.txt")
+            filename = os.path.join(output_folder, f"bit_{counter:08d}.txt")
 
             with open(filename, "wb") as bit_file:
                 if bit == "0":
