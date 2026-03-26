@@ -31,6 +31,10 @@ It is gloriously unnecessary.
 
 ## intallation
 
+EXE FILE NOW AVAILABLE!
+
+OR
+
 Clone the repository:
 
 git clone https://github.com/k1ngkgkk/jkhmr.git  
