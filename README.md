@@ -6,6 +6,9 @@ Jackhammer does something no one asked for:
 - It jackhammers an image into thousands (or millions) of 1-bit text files.
 - Then it glues the rubble back together using pure Python magic.
 
+Video Demo for convinence:
+https://youtu.be/8jY0S_f05oo?si=TdwA3B4vBFMQqlI_
+
 Why?
 Because we can.
 And I have too much free time in my vacations.
